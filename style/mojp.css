@@ -1,0 +1,224 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    overflow-x: hidden;
+       
+
+}
+
+/* .rozmiar_paneli {
+    height: 90vh;
+    max-width: 100vw; 
+}   */
+
+
+
+#navbar {
+    display: grid;
+    min-height: 50px;
+    grid-auto-flow: column;
+    background-color: none;
+    grid-gap: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Gloria Hallelujah', cursive, black;  
+}
+
+#logo {
+    display: grid;
+    justify-content: start;
+    align-content: center;
+    font-size: 15px;
+    position: fixed;
+    
+}
+
+#links {
+    display: grid;
+    justify-content: end;
+    align-content: center;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+    font-size: 15px;
+    
+
+}
+
+a {
+text-decoration: none;
+color: inherit;
+}
+a:hover {
+    color: rgb(214, 62, 138);
+} 
+
+
+#oMnie {
+    background-image: url("../static/kladka-morze.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    border-top: 1px solid grey;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    align-content: space-around; 
+    height: 90vh;
+    max-width: 100vw;
+}
+.nazwa {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Gloria Hallelujah', cursive, black;
+    flex-grow: 1;
+    margin-top: 7vh;;
+}
+
+
+.btn {
+    font-size: 20px;
+    border:whitesmoke 2px solid;
+    color: whitesmoke;
+    padding: 1vw 2.5vw;
+    font-weight: 500;
+    opacity: 0;
+    animation-name: btn;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    transition-property: all;
+    transition-duration: 1s;
+    margin-bottom: 10vh;
+
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.137);
+}
+@keyframes btn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+#zainteresowania {
+    background-image:url(../static/lab1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    opacity: 0.8;
+    border-top: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 90vh;
+    max-width: 100vw;
+}
+
+.nauka {
+    background-color: rgba(245, 245, 245, 0.692);
+    height: auto;
+    width: auto;
+    font-family: 'Gloria Hallelujah', cursive, black;
+    padding: 2vh 2vw 2vh 2vw;
+    
+}
+
+#edukacja {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10vh 0 5vh 0;; 
+}
+
+.foto1, .foto2, .foto3,.foto4 {
+    height: 42vh;
+    width: auto;
+    padding: 1vw;
+    animation-name: foto-opa;
+    animation-duration: 4s;
+    border-radius: 10% 10% 10% 10%;
+    transition: all 1s ease-in-out;
+    transition-property: opasity, transform;
+    transition-timing-function: ease-in;
+}
+
+.foto1:hover, .foto2:hover, .foto3:hover, .foto4:hover {
+    opacity: 0.8;
+    transform: rotateY(180deg);    
+}
+
+.story {
+    margin: 5% 5% 5% 10%;
+    text-align: justify;
+    font-family: 'Gloria Hallelujah', cursive, black;
+}
+
+#kontakt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(233, 233, 233);
+    background-attachment: fixed;
+    border-top: 1px solid grey;
+    min-height: 35vh;
+    max-width: 100vw;
+    
+}
+
+.links {
+    display: flex;
+    width: 80vw;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2vh 0 2vh 0;
+
+}
+
+.link {
+    min-width: 130px;
+    height: auto;
+    background-color:  rgb(233, 233, 233);;
+    text-decoration: none;
+    font-family: 'Gloria Hallelujah', cursive, black;
+    text-align: center;
+    border-radius: 10%;
+    flex-wrap: wrap;
+    margin: 1vh 1vw 1vh 5vh;   
+}
+
+.link:hover {
+    color: white;
+    background-color:rgb(214, 62, 138);
+}
+
+
+.kont-text {
+    height: 10vh;
+    width: auto;
+    margin: 6vh 1vw 1vw 1vw;
+    font-family: 'Gloria Hallelujah', cursive, white;
+
+}
+footer {
+    border-top: whitesmoke 2px solid;
+    background-color: rgba(116, 114, 114, 0.774);
+}
+.source {
+    margin-top: 1vh;
+    font-family: 'Gloria Hallelujah', cursive, white;
+    border-top: whitesmoke 1px solid;
+}
